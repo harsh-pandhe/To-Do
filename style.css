@@ -119,3 +119,14 @@ tr + tr {
 td ul {
   margin-top: 0.2rem; /* Adjust the spacing between tasks */
 }
+
+.animate {
+    opacity: 0;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 1s ease-out;
+    -webkit-animation: fadeIn 1s ease-out;
+}
