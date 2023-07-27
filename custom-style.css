@@ -1,0 +1,188 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;600&display=swap");
+
+/* Global Styles */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f9fc;
+  color: #333;
+}
+
+header {
+  font-family: "Pacifico", cursive;
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+section {
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 2rem;
+  transition: transform 0.2s ease-in-out;
+}
+
+section:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Simple List Styles */
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Fancy List Styles */
+.fancy-list {
+  list-style: none;
+  padding-left: 0;
+  counter-reset: item;
+}
+
+.fancy-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.fancy-list li::before {
+  content: counter(item);
+  counter-increment: item;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Additional Styles for Attractiveness */
+.fancy-list li::after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  background-color: #007bff;
+  border-radius: 50%;
+}
+
+.fancy-list li:hover::after {
+  background-color: #28a745;
+  width: 8px;
+  height: 8px;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+
+  section {
+    padding: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* Adjust styles for smaller screens */
+  header h1 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  /* Example: Hide fancy list styles on smaller screens */
+  .fancy-list li {
+    position: relative;
+    padding-left: 0;
+  }
+
+  .fancy-list li::before {
+    display: none;
+  }
+
+  .fancy-list li::after {
+    display: none;
+  }
+}
+/* Additional Styles for the Back to Schedule Button */
+#back-to-schedule {
+    display: block;
+    margin: 1.5rem auto;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+#back-to-schedule:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
