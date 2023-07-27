@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Collaborative Code Editor Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="dashboard-style.css">
+</head>
+
+<body>
+    <header>
+        <h1><span class="logo-icon">🔥</span>Collaborative Code Editor Dashboard</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Schedule</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="project-scope">
+            <h2>Project Scope</h2>
+            <p>The Collaborative Code Editor web application aims to empower multiple programmers to collaborate in
+                real-time on coding projects. The application will provide a seamless coding environment supporting
+                various programming languages, enabling users to create accounts, edit code together, chat, perform
+                version control, and execute code within the platform.</p>
+        </section>
+
+        <section class="requirements">
+            <h2>Requirements</h2>
+            <ul>
+                <li>
+                    <span class="icon">🔐</span>
+                    <strong>User Registration and Authentication:</strong> Users can register with the platform using
+                    email and password. Authentication is required to securely access the collaborative coding
+                    environment.
+                </li>
+                <li>
+                    <span class="icon">✍️</span>
+                    <strong>Code Editor with Syntax Highlighting:</strong> Implement a code editor with syntax
+                    highlighting for various programming languages to improve readability and coding experience.
+                </li>
+                <li>
+                    <span class="icon">⚡</span>
+                    <strong>Real-Time Collaboration:</strong> Integrate real-time collaboration features using
+                    technologies like WebSockets to synchronize code changes across multiple users in real-time.
+                </li>
+                <li>
+                    <span class="icon">👥</span>
+                    <strong>Cursor Tracking and User Presence:</strong> Display the positions of each user's cursor in
+                    the code editor.
+                    Show users' presence status (online/offline) to enhance collaboration.
+                </li>
+                <li>
+                    <span class="icon">💬</span>
+                    <strong>Chat and Communication:</strong> Provide a chat feature for users to communicate while
+                    working on the same
+                    code.
+                </li>
+                <li>
+                    <span class="icon">📜</span>
+                    <strong>Version Control and History:</strong> Implement version control to track code changes and
+                    allow users to
+                    revert to previous versions if needed.
+                </li>
+                <li>
+                    <span class="icon">🚀</span>
+                    <strong>Language Selection and Code Execution:</strong> Allow users to choose their preferred
+                    programming language
+                    from a list of supported languages. Integrate a code execution feature to enable users to test code
+                    directly within
+                    the platform.
+                </li>
+                <li>
+                    <span class="icon">🐞</span>
+                    <strong>Error Highlighting and Debugging:</strong> Add features to highlight syntax errors and
+                    assist with debugging
+                    code in real-time.
+                </li>
+                <li>
+                    <span class="icon">📂</span>
+                    <strong>File Sharing and Project Management:</strong> Enable users to share files and collaborate on
+                    entire coding
+                    projects.
+                </li>
+                <li>
+                    <span class="icon">📱</span>
+                    <strong>Responsive Design:</strong> Ensure the platform is responsive and accessible on various
+                    devices, including
+                    desktops, tablets, and smartphones.
+                </li>
+            </ul>
+        </section>
+
+<section class="features">
+    <h2>Features</h2>
+    <ul>
+        <li>
+            <span class="icon">🔑</span>
+            <strong>User Registration and Login</strong>
+            <p>Allow users to create accounts and log in to the platform securely using email and password.</p>
+        </li>
+        <li>
+            <span class="icon">👥</span>
+            <strong>Real-Time Code Collaboration</strong>
+            <p>Enable multiple users to collaborate on code in real-time, with synchronized updates and live cursor
+                tracking.</p>
+        </li>
+        <li>
+            <span class="icon">🎨</span>
+            <strong>Syntax Highlighting for Various Languages</strong>
+            <p>Enhance code readability by implementing syntax highlighting for a wide range of programming languages.
+            </p>
+        </li>
+        <li>
+            <span class="icon">🖥️</span>
+            <strong>File Management</strong>
+            <p>Allow users to create, upload, and organize files within projects for easy collaboration and version
+                control.</p>
+        </li>
+        <li>
+            <span class="icon">💬</span>
+            <strong>Real-Time Chat</strong>
+            <p>Provide a real-time chat feature that allows users to communicate with each other while working on the
+                same code.</p>
+        </li>
+        <li>
+            <span class="icon">📚</span>
+            <strong>Version History</strong>
+            <p>Keep track of code changes and revisions, enabling users to view and revert to previous versions of their
+                code.</p>
+        </li>
+        <li>
+            <span class="icon">🔍</span>
+            <strong>Error Highlighting</strong>
+            <p>Highlight syntax errors and provide real-time suggestions to assist users in debugging their code.</p>
+        </li>
+        <li>
+            <span class="icon">🚀</span>
+            <strong>Code Execution</strong>
+            <p>Allow users to run their code within the platform to test its functionality and correctness.</p>
+        </li>
+        <li>
+            <span class="icon">📤</span>
+            <strong>File Sharing</strong>
+            <p>Enable users to share their coding projects with collaborators or the wider community, promoting
+                collaboration and knowledge exchange.</p>
+        </li>
+        <li>
+            <span class="icon">📱</span>
+            <strong>Responsive Design</strong>
+            <p>Ensure the application is responsive and user-friendly across various devices, including desktops,
+                tablets, and smartphones.</p>
+        </li>
+        <!-- Add more features here as needed -->
+    </ul>
+</section>
+<section id="team">
+    <h2>Team Roles and Responsibilities</h2>
+    <div class="role">
+        <h3>Project Manager</h3>
+        <p>Responsible for overall project planning, coordination, and communication with team members. Ensures that
+            project goals and milestones are met.</p>
+    </div>
+    <div class="role">
+        <h3>Front-end Developer</h3>
+        <p>In charge of designing and implementing the user interface using HTML, CSS, and JavaScript. Works on
+            integrating the real-time collaboration features.</p>
+    </div>
+    <div class="role">
+        <h3>Back-end Developer</h3>
+        <p>Responsible for developing the server-side logic using a suitable programming language and handling user
+            authentication, code execution, and chat functionality.</p>
+    </div>
+    <div class="role">
+        <h3>Quality Assurance (QA) Tester</h3>
+        <p>Focuses on testing the application, identifying and reporting bugs, and ensuring the application meets the
+            specified requirements and quality standards.</p>
+    </div>
+</section>
+</main>
+    </main>
+    <footer>
+        <p>Created by CodeChakravyuh</p>
+    </footer>
+</body>
+
+</html>
