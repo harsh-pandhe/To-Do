@@ -1,71 +1,121 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default margin and padding */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
   margin: 0;
   padding: 0;
 }
+
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to bottom, #f9f9f9, #e8f3ff);
+}
+
 header {
-  background-color: #333;
+  background-color: #3366cc;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 main {
   padding: 2rem;
   max-width: 800px;
   margin: 0 auto;
 }
+
 table {
   width: 100%;
   border-collapse: collapse;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #fff;
 }
+
 th,
 td {
-  padding: 1rem;
+  padding: 1.2rem;
   border-bottom: 1px solid #ddd;
 }
+
 th {
   text-align: left;
+  background-color: #3366cc;
+  color: #fff;
 }
-th:first-child,
-td:first-child {
-  width: 20%;
+
+td {
+  background-color: #f9f9f9;
 }
+
+tr:nth-child(even) td {
+  background-color: #e8f3ff;
+}
+
 ul {
   margin: 0;
   padding-left: 1.2rem;
 }
+
 footer {
-  background-color: #333;
+  background-color: #3366cc;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Styling */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   th,
   td {
-    padding: 0.5rem;
+    padding: 1rem;
   }
 }
 
 /* Fancier Styling */
+th:first-child,
+td:first-child {
+  width: 25%;
+}
+th:last-child,
+td:last-child {
+  width: 15%;
+}
+header h1 {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin-bottom: 0;
+}
 table {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transform: translateY(10px);
+  transition: transform 0.3s ease-in-out;
 }
-th {
-  background-color: #555;
-  color: #fff;
-}
-td {
-  background-color: #f9f9f9;
-}
-tr:nth-child(even) td {
-  background-color: #f2f2f2;
+table:hover {
+  transform: translateY(0);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 footer p {
   font-style: italic;
+  opacity: 0.8;
+}
+/* Spacing between rows */
+tr + tr {
+  border-top: 1px solid #ddd;
+}
+td ul {
+  margin-top: 0.2rem; /* Adjust the spacing between tasks */
 }
