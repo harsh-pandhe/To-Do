@@ -1,7 +1,5 @@
-/* Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;600&display=swap");
 
-/* Global Styles */
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -89,7 +87,6 @@ li {
   color: #007bff;
 }
 
-/* Additional Styles for Attractiveness */
 .fancy-list li::after {
   content: "";
   position: absolute;
@@ -108,7 +105,6 @@ li {
   height: 8px;
 }
 
-/* Footer */
 footer {
   background-color: #007bff;
   color: #fff;
@@ -143,7 +139,6 @@ a:hover {
 }
 
 @media screen and (max-width: 480px) {
-  /* Adjust styles for smaller screens */
   header h1 {
     font-size: 2rem;
   }
@@ -152,7 +147,6 @@ a:hover {
     padding: 1rem;
   }
 
-  /* Example: Hide fancy list styles on smaller screens */
   .fancy-list li {
     position: relative;
     padding-left: 0;
@@ -166,23 +160,22 @@ a:hover {
     display: none;
   }
 }
-/* Additional Styles for the Back to Schedule Button */
 #back-to-schedule {
-    display: block;
-    margin: 1.5rem auto;
-    padding: 1rem 2rem;
-    font-size: 1.1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    text-align: center;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+  display: block;
+  margin: 1.5rem auto;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
 
 #back-to-schedule:hover {
-    background-color: #0056b3;
-    transform: translateY(-3px);
+  background-color: #0056b3;
+  transform: translateY(-3px);
 }

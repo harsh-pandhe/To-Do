@@ -1,0 +1,145 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f7fa;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #2a3b4c;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 25px;
+  color: #2a3b4c;
+  border-bottom: 3px solid #007bff;
+}
+
+p,
+li {
+  font-size: 20px;
+  color: #4a4a4a;
+}
+
+ol,
+ul {
+  margin-bottom: 30px;
+  padding-left: 30px;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  transform: scale(0.95);
+  animation: scaleIn 0.3s ease-in-out;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+h2 {
+  position: relative;
+}
+
+h2:before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #007bff;
+}
+
+p::first-letter {
+  font-size: 120%;
+  font-weight: bold;
+}
+
+p::first-line {
+  font-style: italic;
+}
+
+ul {
+  list-style: disc;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  opacity: 0.05;
+  z-index: -1;
+}
+
+.footer {
+  background-color: #007bff;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 30px;
+}
+
+.back-button {
+  display: block;
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
