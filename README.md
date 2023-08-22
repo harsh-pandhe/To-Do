@@ -81,4 +81,4 @@ Please refer to the detailed schedule above for a week-by-week plan for each dev
 
 The provided time-schedule is a general guideline and can be adjusted based on the complexity of individual features, the team's expertise, and any unexpected challenges encountered during development. Regularly review the progress and adapt the schedule as necessary to ensure a successful and on-time completion of the Collaborative Code Editor project.
 
-**Created by CodeChakravyuh**
+**Created by Harsh Pandhe**
